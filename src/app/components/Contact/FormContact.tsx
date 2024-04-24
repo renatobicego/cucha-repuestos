@@ -78,7 +78,7 @@ const FormContact = () => {
           <h3 className="text-xl 2xl:text-2xl font-semibold max-lg:text-white">
             Haga su consulta
           </h3>
-          <div className="flex items-center gap-2 mt-2 w-full">
+          <div className="flex items-center gap-2 mt-2 w-full max-md:flex-wrap">
             <Field
               id="name"
               tabIndex={1}
@@ -113,7 +113,7 @@ const FormContact = () => {
             name="email"
             placeholder="ejemplo@ejemplo.com"
           />
-          <div className="flex items-center gap-2 w-full">
+          <div className="flex items-center gap-2 w-full max-md:flex-wrap">
             <Field
               id="model"
               tabIndex={4}
@@ -130,7 +130,7 @@ const FormContact = () => {
               tabIndex={5}
               component={CustomInput}
               label="Año"
-              className="w-1/2"
+              className="w-2/5 md:w-1/2"
               isInvalid={errors.year}
               errorMessage={errors.year && "Campo requerido"}
               labelPlacement="outside"
@@ -143,7 +143,7 @@ const FormContact = () => {
               component={CustomInput}
               label="Chasis (opcional)"
               isInvalid={errors.chasis}
-              className="w-4/5"
+              className="flex-1 md:w-4/5"
               labelPlacement="outside"
               name="chasis"
               placeholder="Número de chasis"

@@ -32,7 +32,7 @@ const HeroSection = () => {
     <section className="relative w-full flex flex-col items-center gap-4 xl:gap-6">
       <Image
         src={"/camiones-iveco.png"}
-        className="max-md:h-1/2 md:max-lg:h-5/6 max-lg:object-cover lg:w-full absolute -top-14 md:-top-24 left-0"
+        className="max-md:h-1/2 md:max-lg:h-5/6 max-lg:object-cover lg:w-full absolute -top-16 md:-top-24 left-0"
         alt="Camiones iveco con los que trabajamos"
         width={1422}
         height={586}
@@ -54,7 +54,7 @@ const HeroSection = () => {
                 ? "bg-primario !text-white"
                 : "bg-white"
             } flex flex-col w-full
-            items-start gap-2 px-4 md:px-6 py-7 md:py-9 text-texto drop-shadow-md`}
+            items-start gap-2 px-4 md:px-6 py-5 md:py-9 text-texto drop-shadow-md`}
           >
             <div className="h-14 2xl:h-16">
               <Image
@@ -66,8 +66,8 @@ const HeroSection = () => {
               />
             </div>
             <div className="flex flex-col gap-2">
-              <h4 className="text-lg xl:text-xl 2xl:text-2xl font-semibold">{card.title}</h4>
-              <p className="md:max-xl:text-sm">{card.description}</p>
+              <h4 className="md:text-lg xl:text-xl 2xl:text-2xl font-semibold">{card.title}</h4>
+              <p className="max-xl:text-sm">{card.description}</p>
             </div>
           </div>
         ))}

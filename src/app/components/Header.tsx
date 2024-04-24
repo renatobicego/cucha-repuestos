@@ -16,21 +16,18 @@ import { FaAngleRight } from "react-icons/fa6";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-  ]
+  const menuItems = ["Profile", "Dashboard", "Activity"];
   return (
-    <Navbar 
-        className="bg-texto/50 md:h-24 " 
-        classNames={{
-            content: "text-white",
-            wrapper: "max-w-[95%] lg:max-w-[85%]"
-        }}
-        onMenuOpenChange={setIsMenuOpen}
-        shouldHideOnScroll>
-      <NavbarBrand>
+    <Navbar
+      className="bg-texto/50 md:h-24 "
+      classNames={{
+        content: "text-white",
+        wrapper: "max-w-[95%] lg:max-w-[85%]",
+      }}
+      onMenuOpenChange={setIsMenuOpen}
+      shouldHideOnScroll
+    >
+      <NavbarBrand as={Link} href={"/"}>
         <Image
           src={"/logo-cucharepuestos.jpg"}
           alt="Logo cucha repuestos"
@@ -41,7 +38,7 @@ const Header = () => {
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-8" justify="end">
         <NavbarItem>
-          <Link className="text-white text-sm font-semibold" href="#" aria-current="page">
+          <Link className="text-white text-sm font-semibold" href="/repuestos">
             Repuestos
           </Link>
         </NavbarItem>
@@ -67,21 +64,28 @@ const Header = () => {
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         />
       </NavbarContent>
-      <NavbarMenu>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              color={
-                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
-              }
-              className="w-full"
-              href="#"
-              size="lg"
-            >
-              {item}
-            </Link>
-          </NavbarMenuItem>
-        ))}
+      <NavbarMenu className="bg-texto/50 px-10 text-right items-end py-6 gap-4">
+        <NavbarMenuItem>
+          <Link className="text-white text-sm font-semibold" href="/repuestos">
+            Repuestos
+          </Link>
+        </NavbarMenuItem>
+        <NavbarItem>
+          <Link className="text-white text-sm font-semibold" href="#">
+            Sobre Nosotros
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Button
+            endContent={<FaAngleRight />}
+            as={Link}
+            className="bg-primario text-white rounded-md font-semibold py-4 px-6 items-center"
+            href="/#contacto"
+            variant="flat"
+          >
+            Contacto
+          </Button>
+        </NavbarItem>
       </NavbarMenu>
     </Navbar>
   );

@@ -12,6 +12,6 @@ body, html {
     @apply font-bold text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl
   }
   h4 {
-    @apply font-medium xl:text-lg 2xl:text-xl
+    @apply font-medium max-md:text-sm xl:text-lg 2xl:text-xl
   }
 }

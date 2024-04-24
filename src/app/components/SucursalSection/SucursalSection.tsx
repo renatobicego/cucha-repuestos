@@ -24,13 +24,13 @@ const SucursalSection = () => {
         </h3>
         <div className="flex items-center gap-4">
           <SlLocationPin className="text-primario h-6 w-6 md:w-8 md:h-8 lg:w-10 lg:h-10" />
-          <h5 className="font-semibold md:max-xl:text-sm xl:text-base 2xl:text-lg whitespace-pre-line">
+          <h5 className="font-semibold max-xl:text-sm xl:text-base 2xl:text-lg whitespace-pre-line">
             {sucursalShowInfo.location.addressName.replaceAll("+", " ")}
           </h5>
         </div>
         <div className="flex items-center gap-4">
           <GoClock className="text-primario h-6 w-6 md:w-8 md:h-8 lg:w-10 lg:h-10" />
-          <h5 className="font-semibold md:max-xl:text-sm xl:text-base 2xl:text-lg whitespace-pre-line">
+          <h5 className="font-semibold max-xl:text-sm xl:text-base 2xl:text-lg whitespace-pre-line">
             {sucursalShowInfo.hor}
           </h5>
         </div>
@@ -39,7 +39,7 @@ const SucursalSection = () => {
           <Link
             href={"https://wa.me/" + sucursalShowInfo.tel}
             target="_blank"
-            className="font-semibold md:max-xl:text-sm xl:text-base 2xl:text-lg text-primario"
+            className="font-semibold max-xl:text-sm xl:text-base 2xl:text-lg text-primario"
           >
             {sucursalShowInfo.tel}
           </Link>
@@ -49,7 +49,7 @@ const SucursalSection = () => {
           <Link
             href={"mailto:" + sucursalShowInfo.email}
             target="_blank"
-            className="font-semibold md:max-xl:text-sm xl:text-base 2xl:text-lg text-primario"
+            className="font-semibold max-xl:text-sm xl:text-base 2xl:text-lg text-primario"
           >
             {sucursalShowInfo.email}
           </Link>

@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>
+      <body className={`bg-texto ${montserrat.className}`}>
         <Providers>
           <Header />
           {children}

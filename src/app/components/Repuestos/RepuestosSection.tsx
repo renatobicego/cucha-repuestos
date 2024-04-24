@@ -20,7 +20,7 @@ const RepuestosSection = () => {
           {Object.keys(categories).map((key) => {
             const category: CategoryRepuesto = categories[key];
             return (
-              <div key={key} className="flex gap-2 md:gap-4 items-center rounded-[20px] bg-white text-texto pl-2 pr-6 md:pl-4 md:pr-8 py-1 md:py-2 max-md:max-w-[48%]">
+              <div key={key} className="flex gap-2 md:gap-4 items-center rounded-[20px] bg-white text-texto pl-2 pr-6 md:pl-4 md:pr-8 py-2">
                 {/* Category image */}
                 <Image
                   alt={category.text}
@@ -30,7 +30,7 @@ const RepuestosSection = () => {
                   className="w-8 md:w-10 h-8 md:h-10 xl:w-16 xl:h-16"
                 />
                 {/* Category text */}
-                <p className="font-semibold text-xs md:text-sm xl:text-base max-w-min">{category.text}</p>
+                <p className="font-semibold text-xs md:text-sm xl:text-base max-md:whitespace-pre-line">{category.text}</p>
               </div>
             );
           })}
