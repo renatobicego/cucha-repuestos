@@ -43,14 +43,14 @@ const Contact = () => {
     },
   ];
   return (
-    <section className="bg-texto flex flex-col items-center w-full py-16">
+    <section id="contacto" className="bg-texto flex flex-col items-center w-full py-16">
       <div className="flex w-11/12 lg:w-4/5 bg-white relative">
         <Image
           src={"/images/contacto-daily.webp"}
           alt="Daily en sección contacto"
           width={1199}
           height={882}
-          className="h-full lg:w-1/3 xl:w-2/5 grayscale lg:h-auto object-cover lg:object-[-100px] xl:object-left max-lg:absolute left-0 top-0"
+          className="h-full lg:w-1/3 xl:w-2/5 grayscale lg:h-auto object-cover max-md:object-[-130px] lg:object-[-100px] xl:object-left max-lg:absolute left-0 top-0"
         />
         <FormContact />
       </div>

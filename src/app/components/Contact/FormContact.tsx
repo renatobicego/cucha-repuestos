@@ -113,7 +113,7 @@ const FormContact = () => {
             name="email"
             placeholder="ejemplo@ejemplo.com"
           />
-          <div className="flex items-center gap-2 w-full max-md:flex-wrap">
+          <div className="flex items-center max-md:gap-4 gap-2 w-full max-md:flex-wrap">
             <Field
               id="model"
               tabIndex={4}
@@ -143,7 +143,7 @@ const FormContact = () => {
               component={CustomInput}
               label="Chasis (opcional)"
               isInvalid={errors.chasis}
-              className="flex-1 md:w-4/5"
+              className="max-md:flex-1 md:w-4/5"
               labelPlacement="outside"
               name="chasis"
               placeholder="Número de chasis"

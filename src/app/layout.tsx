@@ -18,8 +18,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`bg-texto ${montserrat.className}`}>
+    <html lang="en" className="scroll-smooth">
+      <body className={`bg-texto ${montserrat.className} scroll-smooth`}>
         <Providers>
           <Header />
           {children}

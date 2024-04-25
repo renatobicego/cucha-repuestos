@@ -6,7 +6,7 @@ import {
 import RepuestosCardGrid from "./RepuestosCardGrid";
 import MarcasSection from "../components/MarcasSection/MarcasSection";
 
-export default function Home() {
+export default function Repuestos() {
   return (
     <main className="flex w-full min-h-screen flex-col items-center justify-between bg-fondo pb-10">
       <section className="flex flex-col items-start w-11/12 lg:w-4/5 my-12 gap-4 text-texto">

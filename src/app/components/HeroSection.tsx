@@ -36,6 +36,7 @@ const HeroSection = () => {
         alt="Camiones iveco con los que trabajamos"
         width={1422}
         height={586}
+        priority
       />
       <h1 className="relative z-10 w-11/12 md:w-3/5 lg:w-[55%] xl:w-1/2 text-center text-white leading-tight 2xl:leading-snug mt-12 xl:mt-16">
         Especialistas en cada repuesto de su camión

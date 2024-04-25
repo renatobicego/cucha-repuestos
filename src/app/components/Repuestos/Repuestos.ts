@@ -130,7 +130,6 @@ export const categories: Record<string, CategoryRepuesto> = {
       "Guardabarros",
       "Capot",
       "Grilla radiador",
-      "Ópticas",
       "Puertas",
       "Caja de carga",
       "Portón caja de carga",

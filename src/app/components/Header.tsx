@@ -22,7 +22,7 @@ const Header = () => {
       className="bg-texto/50 md:h-24 "
       classNames={{
         content: "text-white",
-        wrapper: "max-w-[95%] lg:max-w-[85%]",
+        wrapper: "max-w-[91.6%] lg:max-w-[85%] max-lg:px-0",
       }}
       onMenuOpenChange={setIsMenuOpen}
       shouldHideOnScroll
@@ -43,7 +43,7 @@ const Header = () => {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-white text-sm font-semibold" href="#">
+          <Link className="text-white text-sm font-semibold" href="/sobre-nosotros">
             Sobre Nosotros
           </Link>
         </NavbarItem>
@@ -71,7 +71,7 @@ const Header = () => {
           </Link>
         </NavbarMenuItem>
         <NavbarItem>
-          <Link className="text-white text-sm font-semibold" href="#">
+          <Link className="text-white text-sm font-semibold" href="/sobre-nosotros">
             Sobre Nosotros
           </Link>
         </NavbarItem>

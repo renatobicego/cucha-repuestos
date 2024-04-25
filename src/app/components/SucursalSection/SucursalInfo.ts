@@ -28,7 +28,7 @@ export type SucursalInfo = {
 export const sucursalInfo: SucursalInfo = {
   [Sucursal.comodoro]: {
     location: {
-      address: "Cucha+Repuestos+(IVECO) ",
+      address: "Cucha+Repuestos+(IVECO)",
       addressName: `Av. Hipólito Yrigoyen 2991,\nComodoro Rivadavia, Chubut`,
       lat: -45.8853447,
       lng: -67.5207047,
