@@ -35,7 +35,7 @@ export const sucursalInfo: SucursalInfo = {
     },
     hor: "Lunes a Viernes 9hs a 18hs.\nSábado 10hs a 13hs",
     tel: "+5492974344760",
-    email: "Jereleoptagoniasrl@gmail.com",
+    email: "Jereleopatagoniasrl@gmail.com",
     fb: {
       url: 'https://www.facebook.com/p/Jere-Leo-Patagonia-srl-100063585220601',
       user: 'Jere & Leo Patagonia srl'
