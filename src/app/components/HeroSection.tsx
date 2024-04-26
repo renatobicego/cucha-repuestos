@@ -54,7 +54,7 @@ const HeroSection = () => {
               i === cardsInfo.length - 1
                 ? "bg-primario !text-white"
                 : "bg-white"
-            } flex flex-col w-full
+            } flex flex-col w-full hover:scale-105 hover:rounded-sm transition-all
             items-start gap-2 px-4 md:px-6 py-5 md:py-9 text-texto drop-shadow-md`}
           >
             <div className="h-14 2xl:h-16">

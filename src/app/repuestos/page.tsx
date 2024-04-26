@@ -5,6 +5,14 @@ import {
 } from "../components/Repuestos/Repuestos";
 import RepuestosCardGrid from "./RepuestosCardGrid";
 import MarcasSection from "../components/MarcasSection/MarcasSection";
+import { Metadata } from "next";
+
+
+export async function generateMetadata(): Promise<Metadata> { 
+  return {
+    title: 'Nuestros Repuestos | Cucha Repuestos'
+  }
+}
 
 export default function Repuestos() {
   return (

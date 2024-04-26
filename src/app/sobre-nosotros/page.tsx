@@ -1,5 +1,12 @@
 import Image from "next/image";
 import Contact from "../components/Contact/Contact";
+import { Metadata } from "next";
+
+export async function generateMetadata(): Promise<Metadata> { 
+  return {
+    title: 'Sobre Nosotros | Cucha Repuestos'
+  }
+}
 
 export default function SobreNowsotros() {
   return (

@@ -16,11 +16,12 @@ const RepuestosSection = () => {
         <h2 className="text-white font-bold text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl text-center">
           Línea completa de repuestos IVECO
         </h2>
-        <div className="w-full flex flex-wrap gap-3 md:gap-5 lg:gap-6 justify-center">
+        <div className="w-full flex flex-wrap gap-3 md:gap-5 lg:gap-6 justify-center ">
           {Object.keys(categories).map((key) => {
             const category: CategoryRepuesto = categories[key];
             return (
-              <div key={key} className="flex gap-2 md:gap-4 items-center rounded-[20px] bg-white text-texto pl-2 pr-6 md:pl-4 md:pr-8 py-2">
+              <div key={key} className="flex gap-2 md:gap-4 items-center rounded-[20px] bg-white text-texto pl-2 pr-6 md:pl-4 md:pr-8 py-2 
+              hover:scale-105 transition-all">
                 {/* Category image */}
                 <Image
                   alt={category.text}

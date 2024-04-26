@@ -64,7 +64,7 @@ const Header = () => {
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         />
       </NavbarContent>
-      <NavbarMenu className="bg-texto/50 px-10 text-right items-end py-6 gap-4">
+      <NavbarMenu className="bg-texto/50 px-10 text-right items-end py-6 gap-4 backdrop-blur-md">
         <NavbarMenuItem>
           <Link className="text-white text-sm font-semibold" href="/repuestos">
             Repuestos

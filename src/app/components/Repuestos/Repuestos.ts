@@ -26,27 +26,17 @@ export const categories: Record<string, CategoryRepuesto> = {
       "Tubos",
     ].sort((a, b) => a.localeCompare(b)),
   },
-  transmisiones: {
-    text: "Transmisiones",
-    image: "transmision.png",
-    repuestos: [
-      "Engranaje directa",
-      "Sincronizados",
-      "Eje acanalado",
-      "Juntas",
-      "Seguros",
-      "Yugo salida caja",
-      "Caja de distribución",
-    ].sort((a, b) => a.localeCompare(b)),
-  },
+
   caja: {
     text: "Caja de cambios",
-    image: "engranaje.png",
+    image: "transmision.png",
     repuestos: [
       "Engranajes",
       "Sincronizados",
       "Horquillas",
+      "Yugo salida caja",
       "Eje anclado",
+      "Juntas",
       "Seguros",
       "Caja de distribución",
       "Corona y piñón",
