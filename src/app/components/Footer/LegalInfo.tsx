@@ -1,8 +1,6 @@
 'use client'
-import { Link } from "@nextui-org/react"
 import PaymentsModal from "./PaymentsModal"
 import TermsConditionsModal from "./TermsConditionsModal"
-import CookiesModal from "./CookiesModal"
 
 const LegalInfo = () => {
   return (
@@ -14,9 +12,6 @@ const LegalInfo = () => {
         </li>
         <li>
           <TermsConditionsModal />
-        </li>
-        <li>
-          <CookiesModal />
         </li>
       </ul>
     </nav>

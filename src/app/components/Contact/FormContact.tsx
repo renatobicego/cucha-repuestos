@@ -1,5 +1,6 @@
 "use client";
 import { Button, Input, Textarea } from "@nextui-org/react";
+import axios from "axios";
 import { Field, FieldInputProps, FormikErrors, FormikProps } from "formik";
 import { Formik, Form, FormikHelpers } from "formik";
 import { object, string } from "yup";
@@ -63,7 +64,15 @@ const FormContact = () => {
   const handleSubmit = async (
     values: ContactFormValues,
     actions: FormikHelpers<ContactFormValues>
-  ) => {};
+  ) => {
+    try {
+      await axios.post('/api/email', values)
+      actions.resetForm();
+    } catch (error) {
+      console.log(error)
+      actions.setSubmitting(false);
+    }
+  };
   return (
     <Formik
       initialValues={initialValues}

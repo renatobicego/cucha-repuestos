@@ -24,7 +24,6 @@ const Footer = () => {
       <div className="w-full bg-texto py-4 px-[4%] lg:px-[9.5%] text-white flex justify-between items-center gap-6 flex-wrap">
         <p className="text-xs lg:text-sm mr-32">© 2024 Cucha Repuestos</p>
         <div className="text-xs lg:text-sm flex items-center gap-1 max-sm:flex-col max-sm:items-start">
-          Desarrollado por{" "}
           <Link target="_blank" href="https://dutsiland.com">
             <Image
               src={"/logo-dutsiland.png"}

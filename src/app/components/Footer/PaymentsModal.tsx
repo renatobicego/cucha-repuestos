@@ -13,42 +13,47 @@ const PaymentsModal = () => {
 
   return (
     <>
-      <Button variant="light" className="p-0 h-auto text-texto font-medium max-xl:text-xs" onPress={onOpen}>
+      <Button
+        variant="light"
+        className="p-0 h-auto text-texto font-medium max-xl:text-xs"
+        onPress={onOpen}
+      >
         Pagos y envíos
       </Button>
-      <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+      <Modal scrollBehavior="inside" isOpen={isOpen} onOpenChange={onOpenChange}>
         <ModalContent>
           {(onClose) => (
             <>
               <ModalHeader className="flex flex-col gap-1">
-                Modal Title
+                Pagos y envíos
               </ModalHeader>
               <ModalBody>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pulvinar risus non risus hendrerit venenatis.
-                  Pellentesque sit amet hendrerit risus, sed porttitor quam.
+                  Trabajamos con las compañías de correo más importantes del
+                  país. Usted también pude acercarse a las sedes de Comodoro
+                  Rivadavia o Esquel para retirar su compra, siempre y cuando
+                  esta esté disponible para hacerlo. Cabe aclarar que los pagos
+                  no se realizan mediante esta web; los mismos son realizados
+                  por los diferentes medios de pago acordados con el vendedor.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pulvinar risus non risus hendrerit venenatis.
-                  Pellentesque sit amet hendrerit risus, sed porttitor quam.
+                  Los métodos de pagos disponibles son transferencia bancaria,
+                  cheques, efectivo en cualquiera de las sedes y tarjetas
+                  bancarias (consultar por otros medios de pago). Ante
+                  cualquier consulta podrá contactarnos por los medios
+                  proporcionados en esta página web.
                 </p>
                 <p>
-                  Magna exercitation reprehenderit magna aute tempor cupidatat
-                  consequat elit dolor adipisicing. Mollit dolor eiusmod sunt ex
-                  incididunt cillum quis. Velit duis sit officia eiusmod Lorem
-                  aliqua enim laboris do dolor eiusmod. Et mollit incididunt
-                  nisi consectetur esse laborum eiusmod pariatur proident Lorem
-                  eiusmod et. Culpa deserunt nostrud ad veniam.
+                  Envíos por encomienda o empresas de transporte a retirar por
+                  terminal, con pagadero en destino. Estas son algunas de las
+                  empresas con las que trabajamos (consultar por la
+                  disponibilidad de otras): Etap, Via Cargo, Correo Argentino,
+                  Expreso de a 4 Bahía, Transporte Unión y Sportman.
                 </p>
               </ModalBody>
               <ModalFooter>
                 <Button color="danger" variant="light" onPress={onClose}>
-                  Close
-                </Button>
-                <Button color="primary" onPress={onClose}>
-                  Action
+                  Cerrar
                 </Button>
               </ModalFooter>
             </>
