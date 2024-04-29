@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     "repuestos iveco",
     "camion iveco",
   ],
+  icons: {
+    icon: "/favicon.ico"
+  },
   openGraph: {
     title: "Cucha Repuestos",
     url: "https://cucharepuestos.com",
