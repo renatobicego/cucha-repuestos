@@ -201,6 +201,7 @@ const FormContact = () => {
             component={CustomTextarea}
             label="Escriba su consulta"
             isInvalid={errors.message}
+            errorMessage={errors.message && "Campo requerido"}
             labelPlacement="outside"
             name="message"
             placeholder="Déjenos su consulta"
