@@ -1,6 +1,5 @@
 "use client";
 import { Button, Input, Textarea } from "@nextui-org/react";
-import axios from "axios";
 import { Field, FieldInputProps, FormikErrors, FormikProps } from "formik";
 import { Formik, Form, FormikHelpers } from "formik";
 import { object, string } from "yup";
@@ -22,9 +21,15 @@ const CustomInput = ({
   field: FieldInputProps<any>;
   form: FormikProps<any>;
 }) => {
-  return <Input classNames={{
-    label: "max-lg:!text-white"
-  }} {...field} {...props} />;
+  return (
+    <Input
+      classNames={{
+        label: "max-lg:!text-white",
+      }}
+      {...field}
+      {...props}
+    />
+  );
 };
 
 const CustomTextarea = ({
@@ -35,9 +40,15 @@ const CustomTextarea = ({
   field: FieldInputProps<any>;
   form: FormikProps<any>;
 }) => {
-  return <Textarea classNames={{
-    label: "max-lg:!text-white"
-  }} {...field} {...props} />;
+  return (
+    <Textarea
+      classNames={{
+        label: "max-lg:!text-white",
+      }}
+      {...field}
+      {...props}
+    />
+  );
 };
 
 const contactSchema = object({
@@ -66,10 +77,36 @@ const FormContact = () => {
     actions: FormikHelpers<ContactFormValues>
   ) => {
     try {
-      await axios.post('/api/email', values)
-      actions.resetForm();
+      const { name, phone, email, model, year, chasis, message } = values;
+      fetch(process.env.NEXT_PUBLIC_URL_FORMCARRY as string, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          nombre: name,
+          email,
+          telefono: phone,
+          modeloIveco: model,
+          anio: year,
+          chasis,
+          mensaje: message,
+        }),
+      })
+        .then((response) => response.json())
+        .then((response) => {
+          if (response.code === 200) {
+            alert("¡Consulta enviada!");
+            actions.resetForm();
+          } else {
+            // other error from formcarry
+            alert("Hubo un error al enviar la consulta. Por favor, comuniquese al mail Jereleopatagoniasrl@gmail.com");
+          }
+        });
     } catch (error) {
       console.log(error)
+      alert("Hubo un error al enviar la consulta. Por favor, comuniquese al mail Jereleopatagoniasrl@gmail.com");
       actions.setSubmitting(false);
     }
   };
