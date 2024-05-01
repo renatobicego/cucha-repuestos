@@ -20,7 +20,7 @@ const PaymentsModal = () => {
       >
         Pagos y envíos
       </Button>
-      <Modal scrollBehavior="inside" isOpen={isOpen} onOpenChange={onOpenChange}>
+      <Modal placement="center" scrollBehavior="inside" isOpen={isOpen} onOpenChange={onOpenChange}>
         <ModalContent>
           {(onClose) => (
             <>

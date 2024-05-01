@@ -8,13 +8,13 @@ const Footer = () => {
   return (
     <footer className="w-full bg-fondo pt-10 ">
       <div className="w-full flex items-start justify-start gap-6 md:gap-10 lg:gap-16 xl:gap-24 2xl:gap-32 mb-10 px-[4%] lg:px-[9.5%] max-lg:flex-wrap">
-        <Link href={"/"}>
+        <Link className="max-sm:mr-[70%]" href={"/"}>
           <Image
             src={"/logo-cucharepuestos2.jpg"}
             alt="Logo de cucha repuestos en footer"
             width={125}
             height={125}
-            className="rounded-full size-20 md:size-20 xl:size-auto max-sm:mr-[80%]"
+            className="rounded-full size-20 md:size-20 xl:size-auto "
           />
         </Link>
         <NavList />
