@@ -5,7 +5,7 @@ import { useState } from "react";
 import { IoMailOutline } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
 import { IoLogoInstagram } from "react-icons/io";
-import { FaFacebook } from "react-icons/fa6";
+import { FaFacebook, FaWhatsapp } from "react-icons/fa6";
 
 const SucursalInfo = () => {
   const [sucursalShown, setSucursalShown] = useState<Sucursal>(
@@ -20,7 +20,7 @@ const SucursalInfo = () => {
       </h6>
       <div className="flex items-start flex-col gap-4">
         <div className="flex items-center gap-2">
-          <BsTelephone className="text-primario h-5 w-5" />
+          <FaWhatsapp className="text-primario h-5 w-5" />
           <Link
             href={"https://wa.me/" + sucursalShowInfo.tel}
             target="_blank"

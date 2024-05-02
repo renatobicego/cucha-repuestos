@@ -4,6 +4,7 @@ import { Button, Link } from "@nextui-org/react";
 import { IoMailOutline } from "react-icons/io5";
 import { Sucursal, sucursalInfo } from "../SucursalSection/SucursalInfo";
 import { useState } from "react";
+import { FaWhatsapp } from "react-icons/fa6";
 const ContactInfo = () => {
   const [sucursalShown, setSucursalShown] = useState<Sucursal>(
     Sucursal.comodoro
@@ -17,7 +18,7 @@ const ContactInfo = () => {
       </h5>
       <div className="flex items-center gap-4 flex-wrap">
         <div className="flex items-center gap-4">
-          <BsTelephone className="text-primario h-6 w-6 md:w-8 md:h-8 2xl:w-10 2xl:h-10" />
+          <FaWhatsapp className="text-primario h-6 w-6 md:w-8 md:h-8 2xl:w-10 2xl:h-10" />
           <Link
             href={"https://wa.me/" + sucursalShowInfo.tel}
             target="_blank"
