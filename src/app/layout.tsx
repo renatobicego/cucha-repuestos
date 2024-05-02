@@ -4,6 +4,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 import Header from "./components/Header";
 import Footer from "./components/Footer/Footer";
+import WhatsappButton from "./components/WhatsappButton";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -69,6 +70,7 @@ export default function RootLayout({
         <Providers>
           <Header />
           {children}
+          <WhatsappButton />
           <Footer />
         </Providers>
       </body>
