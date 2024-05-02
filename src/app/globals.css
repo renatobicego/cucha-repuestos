@@ -15,3 +15,8 @@ body, html {
     @apply font-medium max-md:text-sm xl:text-lg 2xl:text-xl
   }
 }
+
+#blur {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}

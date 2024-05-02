@@ -19,13 +19,17 @@ const Header = () => {
   const menuItems = ["Profile", "Dashboard", "Activity"];
   return (
     <Navbar
+      id="blur"
       className="bg-texto/50 md:h-24 "
       classNames={{
+        base: "data-[menu-open=true]:backdrop-blur-xl",
         content: "text-white",
         wrapper: "max-w-[91.6%] lg:max-w-[85%] max-lg:px-0",
+        menu: "bg-texto/50 backdrop-blur-md z-50",
       }}
       onMenuOpenChange={setIsMenuOpen}
       shouldHideOnScroll
+      isBlurred
     >
       <NavbarBrand as={Link} href={"/"}>
         <Image
@@ -43,7 +47,10 @@ const Header = () => {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-white text-sm font-semibold" href="/sobre-nosotros">
+          <Link
+            className="text-white text-sm font-semibold"
+            href="/sobre-nosotros"
+          >
             Sobre Nosotros
           </Link>
         </NavbarItem>
@@ -64,14 +71,17 @@ const Header = () => {
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         />
       </NavbarContent>
-      <NavbarMenu className="bg-texto/50 px-10 text-right items-end py-6 gap-4 backdrop-blur-md">
+      <NavbarMenu id="blur" className=" px-10 text-right items-end py-6 gap-4 bg-texto/50">
         <NavbarMenuItem>
           <Link className="text-white text-sm font-semibold" href="/repuestos">
             Repuestos
           </Link>
         </NavbarMenuItem>
         <NavbarItem>
-          <Link className="text-white text-sm font-semibold" href="/sobre-nosotros">
+          <Link
+            className="text-white text-sm font-semibold"
+            href="/sobre-nosotros"
+          >
             Sobre Nosotros
           </Link>
         </NavbarItem>
