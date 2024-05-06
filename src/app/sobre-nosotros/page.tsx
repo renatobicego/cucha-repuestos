@@ -27,7 +27,7 @@ export default function SobreNowsotros() {
           </p>
           <p className="font-semibold max-md:text-sm">
             Nos esforzamos por ofrecer a nuestros clientes un servicio óptimo en
-            la compra de tus repuestos, con los más altos estándares de calidad,
+            la compra de sus repuestos, con los más altos estándares de calidad,
             con plazos de entrega cortos y precios competitivos.
           </p>
         </div>

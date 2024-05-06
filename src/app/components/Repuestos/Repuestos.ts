@@ -69,7 +69,7 @@ export const categories: Record<string, CategoryRepuesto> = {
       "Sensores",
       "Válvulas",
       "Ramal de cables",
-      "Portalampras",
+      "Portalamparas",
       "Lámparas",
       "Cableado de inyectores",
       "Mazo de cables",
@@ -155,7 +155,7 @@ export const categories: Record<string, CategoryRepuesto> = {
     text: "Sistema \nneumático",
     image: "rueda.png",
     repuestos: [
-      "Acoples/Conecctores",
+      "Acoples/Conectores",
       "Válvulas",
       "Flexibles",
       "Juego de reparación",
