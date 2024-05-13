@@ -61,7 +61,7 @@ export default function RootLayout({
     description: "Especialistas en cada repuesto de su camión Iveco",
   };
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="es" className="scroll-smooth">
       <body className={`bg-texto ${montserrat.className} scroll-smooth relative`}>
         <script
           type="application/ld+json"
